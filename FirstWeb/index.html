@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Nunito:wght@200;300;400&family=Source+Serif+4:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>NutriHealth</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="hero">
+      <header>
+        <nav>
+          <!-- nav header -->
+          <div class="nav-header">
+            <h1>Nutri <span>HEALTH</span></h1>
+            <button class="btn nav-toggle">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+          <!-- links -->
+          <ul class="show links">
+            <li>
+              <a href="" class="show-modal">About</a>
+            </li>
+            <li>
+              <a href="#nutrient">Nutrients</a>
+            </li>
+            <!-- <li> 
+              <a href="">Nutrients</a>
+            </li>-->
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <p>
+              This page gives information about Health and Fitness , Nutrition and it’s Types , Function and Health Benefits, refernce information is also provide for Body Mass Index.
+            </p>
+          </div>
+          <div class="overlay hidden"></div>
+        </nav>
+      </header>
+      <main>
+        <h2>BMI : Body Mass Index </h2>
+        <div class="detailbmi">
+          <p>&#8594; It is a relation of a person’s weight with their height. </p>
+          <p>&#8594; It is an inexpensive method to have an idea if a person has correct weight as per the height.</p>
+          <p class="paraheading"><u>How is BMI used</u></p>
+          <p>BMI is a screening tool whose refrence values can indicate whether a person is underweight ,healthy weight, excess weight, or obese. </p>
+        </div>
+      </main>
+      <aside>
+        <form action="" id="bmiForm">
+          <h2>BMI SCREENING TOOL</h2>
+          <!-- <button id="resetbtn" class="btnform">RESET</button> -->
+          <div class="height">
+            <label for="valuehght">Enter Height</label>
+            <input type="number" min="0" id="valuehght" placeholder="Centimeter" step="0.1" />
+          </div>
+          <div class="weight">
+            <label for="valueweight">Enter Weight</label>
+            <input type="number" min="0" id="valueweight" placeholder="Kilograms" step="0.1" />
+          </div>
+          <button class="btnform btnbmicalculation">SUBMIT</button>
+          <div class="result">
+            <label for="">Result</label>
+            <input type="text" id="result" readonly />
+          </div>
+          <div class="resultext">
+            <input type="text" class="displaybmitext" readonly />
+          </div>
+          <p class="information">This BMI calculator is for informational purposes only. Consult a healthcare provider before making health decisions. BMI is an indirect assessment of health risk and may not be accurate because it cannot determine the proportion or distribution of body fat. BMI calculator source <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm#limitations" target="_blank">National Institutes of Health (NIH).</a> 
+          </p>
+        </form>
+      </aside>
+      <div class="bmitable">
+        <table class="tableStyle">
+          <tr>
+            <th>BMI</th>
+            <th>Weight Information</th>
+          </tr>
+          <tr>
+            <td>
+              <p>< 18.5</p> </td> <td>Underweight
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>18.5-24.9</p>
+            </td>
+            <td>Normal</td>
+          </tr>
+          <tr>
+            <td>25-29.9</td>
+            <td>
+              <p>Overweight</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>>30</p>
+            </td>
+            <td>Obese</td>
+          </tr>
+        </table>
+      </div>
+      <article>
+        <dl>
+          <dt > <u>History</u> 
+          <dd>
+            BMI is very easy to measure and calculate and is therefore the most commonly used tool to correlate risk of health problems with the weight at population level. It was developed by Adolphe Quetelet during the 19th century. During the 1970s and based especially on the data and report from the Seven Countries study, researchers noticed that BMI appeared to be a good proxy for adiposity and overweight related problems.Source <a href="https://www.euro.who.int/en/health-topics/disease-prevention/nutrition/a-healthy-lifestyle/body-mass-index-bmi" target="_blank">WHO Europe</a>
+          </dd>
+          </dt>
+        </dl>
+      </article>
+    </section>
+    <!-------------------------------~---
+                   SECTION NUTRIENT CLASSIFICATION     
+                ---------------------------------->
+    <section class="nutrients" id="nutrient">
+      <div>
+        <h2>NUTRITION</h2>
+        <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life. It includes ingestion, absorption, assimilation, biosynthesis, catabolism and excretion.
+           The science that studies the physiological process of nutrition is called nutritional science.
+              <blockquote>~Wikipedia</blockquote> </p>
+      </div>
+      <div>
+        <h2>NUTRIENTS</h2>
+        <p>A nutrient is a substance used by an organism to survive, grow, and reproduce OR Nutrients are substances used by body to make energy , build and maintain tissues .</p>
+        <p>There are six major nutrients: Carbohydrates , Lipids (Fats), Proteins, Vitamins, Minerals, Water.</p>
+        <p>These are further subdivide into two main catogaries</p>
+      </div>
+      <div class="nutrientClassification">
+        <ul>
+          <li class=""><a class="typNutrient">Macronutrients </a>
+            <ul>
+              <li class="typMacronutrient"><a >Carbohydrates </a>
+                <!-- <ul class="typCarb"> 
+                    <li><a href="#">Starch</a></li>
+                    <li><a href="#">Sugar</a></li>
+                    <li><a href="#">Fibre</a></li>
+                  </ul>-->
+              </li>
+              <li class="typMacronutrient"><a >Fats</a>
+                <!-- <ul class="typFats"> 
+                  <li><a href="#">Saturated Fat</a></li>
+                  <li><a href="#">Unsaturated Fat</a></li>
+                  <li><a href="#">Trans Fat</a></li>
+                   </ul>-->
+              </li>
+              <li class="typMacronutrient"><a >Protein</a></li>
+              <li class="typMacronutrient"><a >Water</a></li>
+            </ul>
+          </li>
+          <li class=""><a class="typNutrient">Micronurtients </a>
+            <ul>
+              <li class="typMicronutrient"><a >Minerals </a>
+                <!-- <ul class="typMinerals">  
+                    <li><a href="#">Potassium</a></li>
+                    <li><a href="#">Sodium</a></li>
+                    <li><a href="#">Calcium</a></li>
+                    <li><a href="#">Phosphorus</a></li>
+                    <li><a href="#">Zinc</a></li>
+                    <li><a href="#">Magnesium</a></li>
+                    <li><a href="#">Iron</a></li>
+                    <li><a href="#">Manganese</a></li>
+                   </ul>-->
+              </li>
+              <li class="typMicronutrient"><a >Vitamins</a></li>
+              <!-- <ul class="typVitamins"> 
+                  <li><a href="#">Water Soluable</a></li>
+                  <li><a href="#">Insoluable</a></li>
+                </ul>-->
+              <li class="typMicronutrient"><a >Antioxidants</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="nutrientsTree">
+        <ul class="tree">
+          <li>
+            <div class="nameNutrient">
+              <span>Nutrients</span>
+              <ul>
+                <li>
+                  <span>Macronutrients</span>
+                  <div class="">
+                    <ul>
+                      <li>
+                        <span>Carbohydrates</span>
+                        <!-- <ul> 
+                            <li>
+                              <span>Starches</span>
+                            </li>
+                            <li>
+                              <span>Sugars</span>
+                            </li>
+                            <li>
+                              <span>Fibre</span>
+                            </li>
+                          </ul>-->
+                      </li>
+                      <li>
+                        <span>Fats</span>
+                        <!-- <ul> 
+                            <li>
+                              <span>Saturated Fats</span>
+                            </li>
+                            <li>
+                              <span>Unsaturated Fats</span>
+                            </li>
+                            <li>
+                              <span>Trans Fats</span>
+                            </li>
+                          </ul>-->
+                      </li>
+                      <li>
+                        <span>Proteins</span>
+                      </li>
+                      <li>
+                        <span>Water</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span>Micronutrients</span>
+                  <div class="">
+                    <ul>
+                      <li>
+                        <span>Minerals</span>
+                        <!-- <ul> 
+                            <span>Potassium</span>
+                          </ul>
+                          <ul>
+                            <span>Sodium</span>
+                          </ul>
+                          <ul>
+                            <span>Calcium</span>
+                          </ul>
+                          <ul>
+                            <span>Phosphorum</span>
+                          </ul>
+                          <ul>
+                            <span>Magnesium</span>
+                          </ul>
+                          <ul>
+                            <span>Zinc</span>
+                          </ul>
+                          <ul>
+                            <span>Iron</span>
+                          </ul>
+                          <ul>
+                            <span>Manganese</span>
+                          </ul>
+                          <ul>
+                            <span>Copper</span>
+                          </ul>-->
+                      </li>
+                      <li>
+                        <span>Vitamins</span>
+                        <!-- <ul> 
+                            <li>
+                              <span>Water Soluable</span>
+                              <ul>
+                                <span>All B Vitamins</span>
+                              </ul>
+                            </li>
+
+                            <li>
+                              <span>Insoluable</span>
+                              <ul>
+                                <span>Vitamin A D &K</span>
+                              </ul>
+                            </li>
+                          </ul>-->
+                      </li>
+                      <li>
+                        <span>Antioxidants</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- -------------------------------
+                  SECTION MACRONUTRIENTS DETAILS 
+                ------------------------------------>
+    <section class="macronutrient">
+      <h3> <u>Macronutrient</u> </h3>
+      <p>Macronutrients are a group of nutrients that provide your body with energy and the components it needs to maintain its structure and functions.
+         Macro means large . They are needed in relatively larger amounts than other nutrients .</p>
+      <h4> &#8594; Carbohydrates</h4>
+      <p>
+        - Carbohydrates turns food into glucose to give you the energy to function. <br />
+        - Complex carbs in fruits, vegetables and whole-grain products are less likely to spike blood sugar than simple carbs (sugars). <br />
+      </p>
+      <h4>&#8594; Fats</h4>
+      <p>
+        - Fats are nutrients that gives you energy. <br />
+        - They help the body absorb certain vitamins. <br />
+      </p>
+      <!--      <h4>Unsaturated fats</h4>
+          <p>
+            ▷ They are liquid at room temperature . <br />
+            ▷ Are considered beneficial fats because they can improve blood cholesterol levels, ease inflammation, stabilize heart rhythms, and play a number of other beneficial roles. <br />
+            ▷ Unsaturated fats are predominantly found in foods from plants, such as vegetable oils, nuts, and seeds. <br />
+            ▷ There are two types of “good” unsaturated fats: 1. Monounsaturated fats are found in high concentrations in: Olive, peanut, and canola oils Avocados Nuts such as almonds, hazelnuts, and pecans Seeds such as pumpkin and sesame seeds <br />
+            2. Polyunsaturated fats are found in high concentrations in Sunflower, corn, soybean, and flaxseed oils Walnuts Flax seeds Fish Canola oil – though higher in monounsaturated fat, it’s also a good source of polyunsaturated fat. Omega-3 fats are an important type of polyunsaturated fat. The body can’t make these, so they must come from food. <br />
+            ▷ An excellent way to get omega-3 fats is fish Good plant sources of omega-3 fats include flax seeds, walnuts, and canola or soybean oil. <br />
+          </p>
+          <h4>Saturated Fats</h4>
+          <p>▷ All foods containing fat have a mix of specific types of fats. Even healthy foods like chicken and nuts have small amounts of saturated fat, though much less than the amounts found in beef, cheese, and ice cream. Saturated fat is mainly found in animal foods, but a few plant foods are also high in saturated fats, such as coconut, coconut oil, palm oil, and palm kernel oil.</p>
+          <h4>Trans Fats</h4>
+          <p>
+            ▷ Trans fatty acids, more commonly called trans fats, are made by heating liquid vegetable oils in the presence of hydrogen gas and a catalyst, a process called hydrogenation. Partially hydrogenating vegetable oils makes them more stable and less likely to become acid. This process also converts the oil into a solid, which makes them function as margarine or shortening. Partially hydrogenated oils can withstand repeated heating
+            without breaking down, making them ideal for frying fast foods. For these reasons, partially hydrogenated oils became a mainstay in restaurants and the food industry – for frying, baked goods, and processed snack foods and margarine. Partially hydrogenated oil is not the only source of trans fats in our diets. Trans fats are also naturally found in beef fat and dairy fat in small amounts.
+          </p>-->
+      <h4>&#8594; Proteins</h4>
+      <p>
+        - Protein is an important part of every diet. <br />
+        - It is part of every cell in the body. <br />
+        - Helps the body to build and repair cells and tissues. <br />
+        - Major component of the skin, muscle, bone, organs, hair and nails. <br />
+        - Protein provides the building blocks of the body, and not just for muscle. Every cell, from bone to skin to hair, contains protein.All of your hormones, antibodies, and other important substances are composed of protein. <br />
+        - Protein is not used to fuel the body unless necessary.
+      </p>
+      <h4>&#8594; Water</h4>
+      <p>
+        - Water is the major constituent of the human body. <br />
+        - Our body cannot produce enough water by metabolism or obtain enough water by food ingestion to fulfil its needs. <br />
+        - Water is present in each cell of our body and in the various tissues and compartments, acts first as a building material.Water is the main constituent of our body, as about 60% of our body weight is made of water.
+      </p>
+    </section>
+    <!-- -----------------------------
+              SECTION DETAILS MICRONUTRIENTS 
+             ------------------------------------>
+    <section class="micronutrient">
+      <h3> <u>Micronutrients</u> </h3>
+      <p>
+        Micronurtients are vitamins and minerals needed by the body in very small amounts. However, their impact on a body’s health are critical, and deficiency in any of them can cause severe and even life-threatening conditions. <br />
+        They perform a range of functions, including enabling the body to produce enzymes, hormones and other substances needed for normal growth and development.
+      </p>
+      <h4>&#8594; Minerals</h4>
+      <p>Major minerals are the ones that the body requires in amounts of at least 100 milligrams per day. They are sodium, potassium, chloride, phosphorus, calcium, magnesium and sulfur</p>
+      <!--  <h3>⇒ Calcium</h3>
+          <p>Below are the important calcium functions</p>
+          <h5>Bone and tooth formation → The most well-known calcium function is to build and strengthen bones and teeth.</h5>
+          <h5>Nerve impulse transmission → Calcium facilitates electrical impulse transmission from one nerve cell to another.</h5>
+          <h5>Muscle contraction → The flow of calcium ions along the muscle cell’s surface and the influx of calcium into the muscle cell are critical for muscle contraction.</h5>
+          <h5>Clotting factors → When a blood vessel is injured and bleeding starts, helps in bloob clotting</h5>-->
+      <h4>&#8594; Vitamins</h4>
+      <p> Vitamins are organic compounds that people need in small quantities. Most vitamins need to come from food because the body either does not produce them or produces very little.Different vitamins play different roles in the body, and a person requires a different amount of each vitamin to stay healthy.There are currently 13 recognized vitamins.</p>
+      <!--  <h4>Water soluable</h4>
+          <p>Water-soluble vitamins (vitamin C and the B-complex vitamins) must dissolve in water before they can be absorbed by the body, and therefore cannot be stored. Any water-soluble vitamins unused by the body is primarily lost through urine.</p>
+          <h4>Fat soluable</h4>
+          <p>Fat-soluble vitamins do not dissolve in water.They’re best absorbed when consumed alongside a source of fat. After consumption, fat-soluble vitamins are stored in your liver and fatty tissues for future use.Vitamin AD E and K are Fat soluable vitamins</p>-->
+    </section>
+    <!--------------------------------
+                SECTION CALORIE DETAILS 
+                -------------------------------->
+    <!--  <section class="calorie">
+        <h2>CALORIE</h2>
+        <p>
+          Calorie is a unit of energy. <br />
+          The calorie is defined as the amount of heat needed to raise the temperature of 1 kilogram of water from 0 to 1 degree Celsius. <br />
+          Our brains, our muscles — every cell in our body — require energy to function in its optimal state. <br />
+          Energy Information <br />
+          1 Gram of Carbs= 4 calories 1 Gram of Protein= 4 calories 1 Gram of Fats= 9 calories 1 Gram of Alcohol = 7 calories
+        </p>
+        <p>When the calories that you eat is equal to the calories that you burn, you maintain your weight. When you eat more calories than you can burn, you gain weight. The body stores the extra calories as fat. And when you eat fewer calories than you burn, you lose weight.</p>
+        <p>The amount of calorie be calculated as below</p>
+        <h2>Total Daily Energy Expenditure (TDEE)</h2>
+        <p>TDEE is a sum of BMR + Physical Activity + Thermic Effect of Food.</p>
+        <h2>BMR</h2>
+        <p>Basal Metabolic Rate ➠ the calories your body burns while resting (= with no activity)</p>
+        <p>BMR accounts for about 60 to 75% of the daily calories burned. The Katch-McArdle EquationBMR = 370 + (9.79 * lean mass in pounds)</p>
+        <p>Sedentary = BMR X 1.2 (little or no exercise, desk job)Lightly active = BMR X 1.375 (light exercise/sports 1-3 days/wk)Mod. active = BMR X 1.55 (moderate exercise/sports 3-5 days/wk)Very active = BMR X 1.725 (hard exercise/sports 6-7 days/wk)Extra active = BMR X 1.9 (hard daily exercise/sports & physical job or 2X day training, i.e marathon, contest etc.)</p>
+        <h2>TEF</h2>
+        <p>The thermic effect of food is the caloric cost of digesting and processing different macronutrients in your diet. -Protein: 20-35% of calories burned through processing -Carbohydrates: 5-15% of calories burned through processing -Fats: 0-5% of calories burned through processing</p>
+        <form action="">
+          <div id="resetbtn">Reset</div>
+          <div class="leanMass">
+            <label for="">Enter Weight</label>
+            <input type="number" id="weightinbmr" placeholder="wght pounds" step="0.1" />
+          </div>
+          <label for="activity">Choose lifestyle:</label>
+          <select id="activity">
+            <option value="sedantry">little or no exercise,deskjob</option>
+            <option value="lightlyactive">Light exercise/sports 1-3 days /week</option>
+            <option value="modactive">Moderate exercise/sports 3-5 days/weeek</option>
+            <option value="veryactive">Hard exercise/sports 6-7 days/week</option>
+            <option value="extraactive">Professional Athelete</option>
+          </select>
+          <button class="bmrcalculation">BMR</button>
+          <div class="resultbmr">
+            <label for="">Result</label>
+            <input type="text" id="totalCalorie" />
+          </div>
+        </form>
+      </section>-->
+
+      <section class="contact" id="contact">
+        <div class="image">
+          <img src="photo/formphoto.jpg" alt="">
+        </div>
+        <div class="contactform">
+          <form  method="post" action="contactform.php" onsubmit="sendEmail();reset();" id="">
+            <h2 id="headingcontact">CONTACT FORM</h2>
+            <button id="resetcontactform">RESET</button>
+            <div class="contactname">
+              <label for="name">Name</label>
+              <input type="text" min="0" id="name" placeholder="name" name="username"/>
+            </div>
+            <div class="contactemail">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="E-mail" name="useremail" />
+            </div>
+            <textarea id="messagearea" rows="4" cols="35" name="comment" form="usrform">
+              </textarea>
+            <button class="submitform" action="" name="submit">SUBMIT</button>
+          </form>
+        </div>
+      </section>
+  </div>
+    <footer>
+      <ul class="social-icons">
+        <!-- <li> 
+          <a href="https://www.facebook.com">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>-->
+        <li>
+          <p class="footernote">The material provided here is inteded for information purpose only.</p>
+        </li>
+      </ul>
+    </footer>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <!-- <script src="contactform.php"></script>-->
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
