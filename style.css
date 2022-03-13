@@ -1,0 +1,635 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  /* primary/main color */
+  --clr-primary-5: #49a6e9;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: rgba(165, 164, 162, 0.959);
+  --clr-white: #fff;
+  --clr-red-dark: rgb(110, 42, 42);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-red-extralight: hsl(340, 60%, 80%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.9s linear;
+  --spacing: 0.25rem;
+  --radius: 1rem;
+  --light-shadow: 0 5px 10px rgba(161, 62, 62, 0.151);
+  --dark-shadow: 0 2px 2px rgba(150, 145, 145, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+/* -------------
+  General Style
+---------------*/
+body {
+  background-color: var(--clr-primary-10);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: black;
+}
+.container {
+  width: 90vw;
+  margin: auto;
+}
+p,
+dt,
+dd {
+  line-height: 1.6em;
+  word-spacing: 0.3em;
+  letter-spacing: 0.05em;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+/* .spacing { 
+  padding-left: 15px;
+}*/
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "Source Serif 4", sans-serif;
+}
+h2 {
+  font-size: 1.3em;
+  margin: 10px auto;
+}
+h3 {
+  font-size: 1.2em;
+  margin: 10px auto;
+}
+h4 {
+  font-size: 1.1em;
+  margin: 10px auto;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Nunito", sans-serif;
+}
+.paraheading {
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+}
+article dl dt {
+  margin-bottom: 0.8rem;
+}
+footer {
+  background-color: var(--clr-grey-10);
+  height: 5rem;
+}
+.footernote {
+  text-align: center;
+  padding-top: 25px;
+}
+/* -------Section Hero (Nav)--------- */
+
+span {
+  color: var(--clr-green-dark);
+}
+/*Style Nav Links*/
+
+.links {
+  transform: var(--transition);
+  height: 120px;
+  overflow: hidden;
+  /* margin-top: 10px; */
+}
+.links a {
+  color: var(--clr-grey-3);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  transition: var(--transition);
+}
+.links a:hover {
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-5);
+  padding-left: 1rem;
+}
+.show {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  /* margin-top: 5px; */
+}
+/* Nav Header*/
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 1rem; */
+}
+/* Hamburger Menu */
+.nav-toggle {
+  font-size: 2rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: var(--clr-primary-1);
+  transform: rotate(-90deg);
+}
+.nutrientsTree {
+  display: none;
+}
+/* -------Section Hero (Nav) End----------- */
+
+/* --------Style Form Section Hero ----------*/
+aside form {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 20px, rgba(0, 0, 0, 0.12) 0px -5px 20px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 0.6em 1em;
+  width: 95%;
+  margin: 1em;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+aside form:hover {
+  box-shadow: var(--dark-shadow);
+}
+aside form h2 {
+  margin: 10px auto;
+}
+aside form input {
+  height: 2em;
+  width: 8em;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+}
+.option label {
+  font-size: 0.9em;
+}
+
+/* Input and Labels */
+.height,
+.weight,
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Reset Button */
+.btnform {
+  padding: 5px 10px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid black;
+  max-width: fit-content;
+  text-align: center;
+  background-color: var(--clr-primary-6);
+}
+.btnform:hover {
+  color: var(--clr-white);
+  /* background-color:var(--clr-red-extralight) */
+}
+/* Reset Button End */
+
+.height > input,
+.weight > input,
+.result > input {
+  margin-left: 50px;
+  flex: 2;
+  max-width: 15em;
+}
+.height > label,
+.weight > label,
+.result > label {
+  flex: 1;
+}
+.resultext > input {
+  width: 97%;
+}
+.information {
+  font-size: 0.5em;
+}
+/* ------Style Form Section Hero (End)-------*/
+
+/* -          Style Table -------------------*/
+
+.tableStyle {
+  font-family: var(--ff-primary);
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.tableStyle td,
+.tableStyle th {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+.tableStyle tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.tableStyle tr {
+  text-align: center;
+}
+.tableStyle tr:hover {
+  background-color: #ddd;
+}
+.tableStyle th {
+  padding-top: 1em;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4dace4;
+  color: white;
+}
+
+/* -----------Style Table End --------*/
+/* -------------------------
+    Style Nutrient Dropdown Menu
+   ------------------------   */
+
+.typMacronutrient,
+.typMicronutrient {
+  display: inline-block;
+  margin-left: 15px;
+  color: #222;
+  list-style: none;
+}
+.typMacronutrient a,
+.typMicronutrient a {
+  color: #222;
+  list-style: none;
+}
+.typCarb,
+.typFats,
+.typMinerals,
+.typVitamins {
+  margin-left: 25px;
+}
+.typNutrient {
+  list-style: none;
+  color: #222;
+  background-color: var(--clr-primary-8);
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Contact Form */
+
+#headingcontact {
+  text-align: center;
+}
+.contact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#contact {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100px 1fr;
+  column-gap: 5px;
+}
+.image {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.contactform {
+  grid-area: 1 / 2 / 2 / 3;
+}
+#contact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactform {
+  border: 1px solid black;
+  background-color: rgb(238, 228, 92);
+
+  padding: 10px;
+  width: 70%;
+}
+.contactform form {
+  display: flex;
+  flex-direction: column;
+}
+.contactform form button {
+  max-width: 100%;
+}
+.contactname,
+.contactemail {
+  display: flex;
+}
+.contactname > label,
+.contactemail > label {
+  flex: 1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.contactname > input,
+.contactemail > input {
+  margin-left: 30px;
+  flex: 2;
+  max-width: 10em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.submitform {
+  margin-top: 5px;
+}
+
+/*Modal Window */
+
+.show-modal {
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+blockquote {
+  text-align: right;
+}
+
+/* -----------------------------------
+      Style Nutrient Dropdown Menu End
+      ------------------------------ */
+/* for Big Screen */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+@media screen and (min-width: 1140px) and (max-width: 1600px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 400px 1fr 600px;
+    grid-template-rows: 100px repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+
+  header {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+  main {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  aside {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .bmitable {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  article {
+    grid-area: 3 / 2 / 4 / 4;
+  }
+
+  header {
+    margin-top: 15px;
+  }
+  body {
+    font-size: 1.3em;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .links {
+    height: auto;
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  /* Hide Nutrients Classification */
+  .nutrientClassification {
+    display: none;
+  }
+  /* ------------------
+ SECTION NUTRIENTS 
+ ----------------------*/
+  .nutrientsTree {
+    display: inline-block;
+    margin-left: 150px;
+  }
+
+  .nameNutrient span {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  .tree,
+  .tree ul,
+  .tree li,
+  .tree span {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .tree {
+    margin: 0 0 1em;
+    text-align: center;
+  }
+
+  .tree,
+  .tree ul {
+    display: table;
+  }
+
+  .tree ul {
+    width: 100%;
+  }
+
+  .tree li {
+    display: table-cell;
+    padding: 0.5em 0;
+    vertical-align: top;
+  }
+
+  .tree li:before {
+    outline: solid 1px #666;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .tree li:first-child:before {
+    left: 50%;
+  }
+
+  .tree li:last-child:before {
+    right: 50%;
+  }
+
+  .tree code,
+  .tree span {
+    border: solid 0.1em #666;
+    border-radius: 0.2em;
+    display: inline-block;
+    margin: 0 0.2em 0.5em;
+    padding: 0.2em 0.5em;
+    position: relative;
+  }
+
+  .tree ul:before,
+  .tree code:before,
+  .tree span:before {
+    outline: solid 1px #666;
+    content: "";
+    height: 0.5em;
+    left: 50%;
+    position: absolute;
+  }
+
+  .tree ul:before {
+    top: -0.5em;
+  }
+
+  .tree code:before,
+  .tree span:before {
+    top: -0.55em;
+  }
+
+  .tree > li {
+    margin-top: 0;
+  }
+  .tree > li:before,
+  .tree > li:after,
+  .tree > li > code:before,
+  .tree > li > span:before {
+    outline: none;
+  }
+
+  #contact {
+    display: grid;
+    grid-template-columns: 250px 400px;
+    grid-template-rows: 250px;
+    column-gap: 5px;
+  }
+  #contact {
+    margin-left: 22%;
+    margin-right: auto;
+  }
+
+  .image {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .contactform {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .contactname > label,
+  .contactemail > label {
+    flex: 1;
+  }
+  .contactname > input,
+  .contactemail > input {
+    margin-left: 50px;
+    flex: 2;
+    max-width: 15em;
+  }
+  #resetcontactform,
+  #messagearea,
+  .submitform {
+    /* max-width: 20rem; */
+    height: 1.5rem;
+  }
+}
